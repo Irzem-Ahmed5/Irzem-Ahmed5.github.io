@@ -40,6 +40,13 @@ h1 {
     font-family: 'Lato', serif;
     font-size: 40px;
     letter-spacing: .3rem;
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
 }
 
 footer {

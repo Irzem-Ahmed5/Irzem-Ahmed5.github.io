@@ -13,9 +13,9 @@ html {
 
 .main {
     margin: 1rem;;
-    padding: 3rem;
+    padding: 10px;
     text-align: center;
-    font-size:larger;
+    font-size:large;
     color: #78E0FC;
 }
 

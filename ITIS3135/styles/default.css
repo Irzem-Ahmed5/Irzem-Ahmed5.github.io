@@ -16,19 +16,33 @@ html {
     padding: 3rem;
     text-align: center;
     font-size:larger;
-    color: ghostwhite;
+    color: #78E0FC;
 }
 
 .contractparagraph {
     text-align: justify;
 }
 
+#introbullets {
+    margin: auto;
+    padding: auto;
+    text-align: justify;
+}
+
+#introductionpicture {
+    text-align: center;
+}
+
 .footer {
     text-align: center;
-    font-size: large;
+    font-size: small;
     color: ghostwhite;
     background-color: slategray;
 
+}
+
+.navfooter{
+    font-size: large;
 }
 
 a {
@@ -44,3 +58,12 @@ a:hover{
     text-decoration:underline;
     color: ghostwhite;
 }
+
+.importantinfo {
+    font-weight: bold;
+}
+
+.sign {
+    font-style: italic;
+}
+

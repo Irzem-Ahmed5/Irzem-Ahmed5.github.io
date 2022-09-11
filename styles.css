@@ -56,3 +56,17 @@ footer {
     font-family: 'Cinzel', serif;
     font-size: 20px;
 }
+
+a {
+    text-decoration: none;
+    color: ghostwhite;
+}
+
+a:visited {
+    text-decoration: none;
+    color: ghostwhite;
+}
+a:hover{
+    text-decoration:underline;
+    color: ghostwhite;
+}

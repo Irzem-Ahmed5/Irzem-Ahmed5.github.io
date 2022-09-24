@@ -37,7 +37,7 @@ footer {
     text-align: justify;
 }
 
-#introductionpicture {
+img, figcaption {
     text-align: center;
     
 }

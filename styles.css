@@ -6,7 +6,7 @@ html {
     padding: 175px;
     background: linear-gradient(-80deg, #015680, #409ee2, #44cecf, #567aab);
     background-size: 500% 500%;
-    animation: fade 15s ease infinite;
+    animation: fade 30s ease infinite;
     
     
 }
@@ -24,6 +24,8 @@ html {
 }
 
 h1 {
+    margin: auto;
+    width: 60%;
     color: ghostwhite;
     font-style:normal;
     text-align: center;
@@ -33,7 +35,7 @@ h1 {
     
 }
 
-#welcometext {
+h2 {
     color: ghostwhite;
     font-style: normal;
     text-align: center;
@@ -55,6 +57,7 @@ footer {
     text-align: center;
     font-family: 'Cinzel', serif;
     font-size: 20px;
+    display: block;
 }
 
 a {
@@ -67,7 +70,12 @@ a:visited {
     color: ghostwhite;
 }
 a:hover{
-    text-decoration:underline;
+    text-decoration:none;
     color: ghostwhite;
+}
+
+hr{
+    border: solid;
+    border-width: 1px;
 }
 

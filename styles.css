@@ -7,35 +7,38 @@ html {
     background: linear-gradient(-80deg, #015680, #409ee2, #44cecf, #567aab);
     background-size: 500% 500%;
     animation: fade 30s ease infinite;
-    
-    
+
+
 }
 
 @keyframes fade {
-    0%{
+    0% {
         background-position: 0% 50%;
     }
-    50%{
+
+    50% {
         background-position: 100% 50%;
     }
-    100%{
+
+    100% {
         background-position: 0% 50%;
     }
 }
 
 h1 {
     margin: auto;
-    width: 60%;
+    width: 100%;
     color: ghostwhite;
-    font-style:normal;
+    font-style: normal;
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-size: 50px;
     letter-spacing: .2rem;
-    
+
 }
 
 h2 {
+    width: auto;
     color: ghostwhite;
     font-style: normal;
     text-align: center;
@@ -46,9 +49,14 @@ h2 {
 }
 
 @keyframes fadeIn {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-    
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }
 
 footer {
@@ -58,24 +66,28 @@ footer {
     font-family: 'Cinzel', serif;
     font-size: 20px;
     display: block;
+    padding-bottom: 10px;
 }
 
 a {
     text-decoration: none;
     color: ghostwhite;
+    width: 100px;
+    height: 75px;
+    display: inline-block;
 }
 
 a:visited {
     text-decoration: none;
     color: ghostwhite;
 }
-a:hover{
-    text-decoration:none;
+
+a:hover {
+    text-decoration: none;
     color: ghostwhite;
 }
 
-hr{
+hr {
     border: solid;
     border-width: 1px;
 }
-

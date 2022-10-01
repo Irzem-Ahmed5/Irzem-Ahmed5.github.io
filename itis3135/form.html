@@ -1,168 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/default.css" />
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <title>
-      Mighty Albatross &mdash; Irzem Ahmed &mdash; ITIS3135 &mdash; Form
-    </title>
-  </head>
 
-  <body>
-    <header>
-      <a href="index.html"
-        ><img src="images/mylogo.png" width="75" height="75" alt="my logo"
-      /></a>
-      <!-- My logo-->
-      <h1>Irzem Ahmed's Mighty Albatross &mdash; ITIS3135</h1>
-      <nav>
-        <p>
-          <a href="index.html">Home </a>&mdash;
-          <a href="irzemahmedintroduction.html">Introduction </a>&mdash;
-          <a href="contract.html">Contract </a>&mdash;
-          <a href="table.html">Table </a>&mdash;
-          <a href="form.html">Form </a>
-        </p>
-      </nav>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles/default.css" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <title>
+    Mighty Albatross &mdash; Irzem Ahmed &mdash; ITIS3135 &mdash; Form
+  </title>
+</head>
 
-    <main>
-      <h1>Registration Form</h1>
-      <p>Would you like to take flight with our team?</p>
-      <form action="https://register-demo.freecodecamp.org">
-        <fieldset>
-          <label for="first-name"
-            >Enter Your First Name:
-            <input id="first-name" name="first-name" type="text" required
-          /></label>
-          <label for="last-name"
-            >Enter Your Last Name:
-            <input id="last-name" name="last-name" type="text" required
-          /></label>
-          <label for="email"
-            >Enter Your Email:
-            <input id="email" name="email" type="email" required
-          /></label>
-          <label for="new-password"
-            >Create a New Password:
-            <input
-              id="new-password"
-              name="new-password"
-              type="password"
-              pattern="[a-z0-5]{8,}"
-              required
-          /></label>
-        </fieldset>
-        <fieldset>
-          <label for="personal-account"
-            ><input
-              id="personal-account"
-              type="radio"
-              name="account-type"
-              class="inline"
-            />
-            Personal Account</label
-          >
-          <label for="business-account">
-            <input
-              id="business-account"
-              type="radio"
-              name="account-type"
-              class="inline"
-            />
-            Business Account</label
-          >
-          <label for="terms-and-conditions" name="terms-and-conditions">
-            <input
-              id="terms-and-conditions"
-              type="checkbox"
-              required
-              name="terms-and-conditions"
-              class="inline"
-            />
-            I accept the
-            <a href="https://www.freecodecamp.org/news/terms-of-service/"
-              >terms and conditions</a
-            >
-          </label>
-        </fieldset>
-        <fieldset>
-          <label for="profile-picture"
-            >Upload a profile picture:
-            <input id="profile-picture" type="file" name="file"
-          /></label>
-          <label for="age"
-            >Input your age (years):
-            <input id="age" type="number" name="age" min="18" max="120"
-          /></label>
-          <label for="referrer"
-            >How did you hear about us?
-            <select id="referrer" name="referrer">
-              <option value="">(select one)</option>
-              <option value="1">YouTube</option>
-              <option value="2">Meta</option>
-              <option value="3">Your neighbour</option>
-              <option value="4">Other</option>
-            </select>
-          </label>
-          <label for="bio"
-            >Provide a bio:
-            <textarea
-              id="bio"
-              name="bio"
-              rows="3"
-              cols="30"
-              placeholder="I like albatrosses..."
-            ></textarea>
-          </label>
-        </fieldset>
+<body>
+  <header>
+    <a href="index.html"><img src="images/mylogo.png" width="75" height="75" alt="my logo" /></a>
+    <!-- My logo-->
+    <h1>Irzem Ahmed's Mighty Albatross &mdash; ITIS3135</h1>
+    <nav>
+      <p>
+        <a href="index.html">Home </a>&mdash;
+        <a href="irzemahmedintroduction.html">Introduction </a>&mdash;
+        <a href="contract.html">Contract </a>&mdash;
+        <a href="table.html">Table </a>&mdash;
+        <a href="form.html">Form </a>
+      </p>
+    </nav>
+  </header>
 
-        <input type="reset" />
-        <input type="submit" value="Submit" action="#" />
-      </form>
-    </main>
+  <main>
+    <h1>Registration Form</h1>
+    <p>Would you like to take flight with our team?</p>
+    <form action="https://register-demo.freecodecamp.org">
+      <fieldset>
+        <label for="first-name">Enter Your First Name:
+          <input id="first-name" name="first-name" type="text" required></label>
+        <label for="last-name">Enter Your Last Name:
+          <input id="last-name" name="last-name" type="text" required></label>
+        <label for="email">Enter Your Email:
+          <input id="email" name="email" type="email" required></label>
+        <label for="new-password">Create a New Password:
+          <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{8,}" required></label>
+      </fieldset>
+      <fieldset>
+        <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline">
+          Personal Account</label>
+        <label for="business-account">
+          <input id="business-account" type="radio" name="account-type" class="inline">
+          Business Account</label>
+        <label for="read-about-me" name="read-about-me">
+          <input id="read-about-me" type="checkbox" required name="read-about-me" class="inline">
+          I have read the
+          <a href="https://irzemahmed.github.io/itis3135/irzemahmedintroduction.html">about me page</a>
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="profile-picture">Upload a profile picture:
+          <input id="profile-picture" type="file" name="file"></label>
+        <label for="age">Input your age (years):
+          <input id="age" type="number" name="age" min="18" max="120"></label>
+        <label for="referrer">How did you hear about us?
+          <select id="referrer" name="referrer">
+            <option value="">(select one)</option>
+            <option value="1">YouTube</option>
+            <option value="2">Meta</option>
+            <option value="3">Your neighbour</option>
+            <option value="4">Other</option>
+          </select>
+        </label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like albatrosses..."></textarea>
+        </label>
+      </fieldset>
 
-    <footer>
-      <nav>
-        <p>
-          <a href="https://www.linkedin.com/in/irzem-ahmed/"
-            >LinkedIn profile </a
-          >&mdash;
-          <a href="https://www.codecademy.com/profiles/MightyAlbatross">
-            codeacademy profile </a
-          >&mdash;
-          <a href="https://www.freecodecamp.org/IrzemAhmed">
-            freeCodeCamp profile </a
-          >&mdash;
-          <a href="https://irzemahmed.github.io/itis3135"
-            >GitHub ITIS3135 homepage</a
-          >&mdash;
-          <a href="https://webpages.charlotte.edu/mahmed29/itis3135/"
-            >UNCC homepage </a
-          >&mdash;
-          <a href="https://irzemahmed.github.io/"> GitHub homepage</a>
-        </p>
-      </nav>
+      <input type="reset" />
+      <input type="submit" value="Submit" action="#">
+    </form>
+  </main>
 
-      <p>~ Designed by the MightyAlbatross empire &copy; 2022 ~</p>
+  <footer>
+    <nav>
+      <p>
+      <p href="https://www.linkedin.com/in/irzem-ahmed/">LinkedIn profile </p>a>&mdash;
+      <a href="https://www.codecademy.com/profiles/MightyAlbatross">
+        codeacademy profile </a>&mdash;
+      <a href="https://www.freecodecamp.org/IrzemAhmed">
+        freeCodeCamp profile </a>&mdash;
+      <a href="https://irzemahmed.github.io/itis3135">GitHub ITIS3135 homepage</a>a>&mdash;
+      <a href="https://webpages.charlotte.edu/mahmed29/itis3135/">UNCC homepage </a>a>&mdash;
+      <a href="https://irzemahmed.github.io/"> GitHub homepage</a>a>
+      </p>
+    </nav>
 
-      <a href="https://validator.w3.org/check?uri=referer"
-        ><img
-          src="images/button-valid-html5.gif"
-          width="88"
-          height="31"
-          alt="Link to HTML validator"
-        />
+    <p>~ Designed by the MightyAlbatross empire &copy; 2022 ~
+    <p>
+
+      <a href="https://validator.w3.org/check?uri=referer"><img src="images/button-valid-html5.gif" width="88"
+          height="31" alt="Link to HTML validator">
       </a>
-      <a href="https://jigsaw.w3.org/css-validator/check/referer"
-        ><img
-          src="images/button-valid-css.gif"
-          width="88"
-          height="31"
-          alt="Link to CSS validator"
-      /></a>
-    </footer>
-  </body>
+      <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="images/button-valid-css.gif" width="88"
+          height="31" alt="Link to CSS validator"></a>
+  </footer>
+</body>
+
 </html>

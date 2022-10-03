@@ -95,6 +95,14 @@ tbody tr:nth-child(even) {
   color: #fff;
 }
 
+ul {
+  text-align: justify;
+}
+
+h3 {
+  text-align: justify;
+}
+
 /* Styling for form */
 form {
   width: 60vw;

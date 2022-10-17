@@ -5,6 +5,10 @@ window.onload = function () {
     document.getElementById("date").innerHTML = time + " -- " + day;
 }
 
+function promptUser() { }
+function getTodaysDate() { }
+
+//greeting
 function nameAndFeeling() {
     const name = document.getElementById("name").value;
     const feeling = document.getElementById("feeling").value;
@@ -13,12 +17,14 @@ function nameAndFeeling() {
     document.getElementById("nameAndFeeling").innerHTML = "Welcome " + name + "! You are feeling " + feeling + ".";
 }
 
+//Find out number of days one has lived
 function ageInDays() {
     const age = document.getElementById("age").value;
     let daysInAge = age * 365.25;
     document.getElementById("displayAgeInDays").innerHTML = daysInAge + " days!";
 }
 
+//Find out how many days are left before winter break
 function timeToWinter() {
     var winterBreak = new Date("2022,12,16").getTime();
 

@@ -27,7 +27,8 @@
                 <a href="table.html">Table</a> &diams;
                 <a href="form.html">Form</a> &diams;
                 <a href="website_evaluations.html">Website Evaluations</a> &diams;
-                <a href="stuff/MY+CrappYPage^-^.htm">CRAPPY Website</a>
+                <a href="stuff/MY+CrappYPage^-^.htm">CRAPPY Website</a> &diams;
+                <a href="first_scripts.html">First Scripts</a>
 
             </p>
         </nav>
@@ -47,8 +48,30 @@
             </label>
 
             <button type="button" onclick="nameAndFeeling()">Let me know</button>
+            <h3><span id="nameAndFeeling">Hello!</span></h3>
         </form>
-        <h3><span id="nameAndFeeling">Hello!</span></h3>
+
+        <form>
+            <label for name="age">
+                Want to see how old you are in day? Enter your age:
+                <input id="age" name="age" placeholder="25">
+            </label>
+            <button type="button" onclick="ageInDays()">Check</button>
+            <h3 id="displayAgeInDays"></h3>
+
+            <br>
+
+
+            <label>Winter break is December 16 2022:
+                <h3 id="time-till-winter-break"></h3>
+            </label>
+
+            <button type="button" onclick="timeToWinter()">How much longer till
+                winter break?</button>
+
+
+        </form>
+
 
 
     </main>

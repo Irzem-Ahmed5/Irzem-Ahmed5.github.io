@@ -13,4 +13,22 @@ function nameAndFeeling() {
     document.getElementById("nameAndFeeling").innerHTML = "Welcome " + name + "! You are feeling " + feeling + ".";
 }
 
+function ageInDays() {
+    const age = document.getElementById("age").value;
+    let daysInAge = age * 365.25;
+    document.getElementById("displayAgeInDays").innerHTML = daysInAge + " days!";
+}
+
+function timeToWinter() {
+    var winterBreak = new Date("2022,12,16").getTime();
+
+    var now = new Date().getTime();
+
+    var difference = winterBreak - now;
+
+    var days = Math.floor(difference / (1000 * 60 * 60 * 24));
+
+    document.getElementById("time-till-winter-break").innerHTML = days + " Days left"
+}
+
 // TODO: WRITE JAVASCRIPT FUNCTION TO UPDATE URL OF VALIDATOR

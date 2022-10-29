@@ -10,6 +10,7 @@
             background-image: linear-gradient(rgb(59, 17, 5), rgb(59, 20, 4), rgb(44, 23, 9));
             font-family: Arial, Helvetica, sans-serif;
             color: ghostwhite;
+
         }
 
         h1 {
@@ -40,6 +41,15 @@
         #brand-link {
             text-decoration: underline;
         }
+
+        table,
+        th,
+        td {
+            margin-left: auto;
+            margin-right: auto;
+            border: 2px solid ghostwhite;
+            border-collapse: collapse;
+        }
     </style>
 </head>
 
@@ -53,8 +63,8 @@
         <h2>Home<BUTTON ONCLICK="ShowAndHide('home')">Click me</BUTTON></h2>
         <section id="home">
             <h3>Add slideshow</h3>
-            <img src="/itis3135/hobby/images/pexels-juliano-ferreira.jpg" alt="campers looking at the sunrise">
-
+            <img src="images/pexels-juliano-ferreira.jpg" alt="campers looking at the sunrise">
+            <figcaption>Camping can take you beautiful places</figcaption>
             <h3>Welcome to a website all about camping, a way
                 to escape the urban stress and reconnect with nature!
             </h3>
@@ -89,16 +99,98 @@
 
         <h2>When to go<BUTTON ONCLICK="ShowAndHide('when')">Click me</BUTTON></h2>
         <section id="when">
-            <h3>Winter Camping</h3>
-            <h3>Spring, Summer and Fall Camping</h3>
-            <h3>Pictures</h3>
+            <img src="images/pexels-imad-clicks.jpg" alt="Man in tent in the snow">
+            <figcaption>A man camping out in the snow</figcaption>
+            <h3>Winter Camping is one of the most favourite camping experiences for campers.
+                This owes to the fact that during the winter, there are much less insects and
+                there is something quite cozy about being bundled up next to a fire while sipping
+                on a hot drink.
+            </h3>
+            <img src="images/pexels-dương-nhân.jpg" alt="A hammock camping set up in the trees">
+            <h3>Spring, Summer and Fall are all game for camping. You may want to try different kind of camping
+                in each whether though. Such as in the summer, due to abundance of different insects, hammock camping
+                with nets would be quite preferable. This keeps you off the ground and away from
+                potential night visitors and also from being swarmed by flying insects.
+            </h3>
+            <h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Weather</th>
+                            <th>Months</th>
+
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="3">Spring</td>
+                            <td>March</td>
+
+                        </tr>
+                        <tr>
+                            <td>April</td>
+                        </tr>
+                        <tr>
+                            <td>May</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Summer</td>
+                            <td>June</td>
+                        </tr>
+                        <tr>
+                            <td>July</td>
+                        </tr>
+                        <tr>
+                            <td>August</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Fall</td>
+                            <td>September</td>
+                        </tr>
+                        <tr>
+                            <td>October</td>
+                        </tr>
+                        <tr>
+                            <td>November</td>
+                        </tr>
+                        <td rowspan="3">Winter</td>
+                        <td>December</td>
+                        </tr>
+                        <tr>
+                            <td>January</td>
+                        </tr>
+                        <tr>
+                            <td>February</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </h3>
         </section>
 
         <h2>Where to go<BUTTON ONCLICK="ShowAndHide('where')">Click me</BUTTON></h2>
         <section id="where">
-            <h3>Local parks and link to find em</h3>
-            <h3>Dispersed Camping</h3>
-            <h3>RV Camping</h3>
+            <img src="images/my-tent-set-up-1.jpg" alt="2 man tent set up">
+            <figcaption>Drive-in campsites are very beginner friendly</figcaption>
+            <h3>Local national and state parks in the USA are wonderful places to camp.
+                They provide various types of campgrounds, from fully developed to primitive.
+                The best part is you do not need to carry your things far and can bring extra stuff
+                in your car. They usually have restrooms with running water. There is usually
+                a fee to book the campsite.
+            </h3>
+            <h3>Dispersed Camping allows you to camp on public land where it is allowed for free. This type of camping
+                is more primitive
+                and can prove dangerous for beginners. Adequate knowledge of public lands and its
+                rules are must as well as survival knowledge and the proper tools.
+            </h3>
+
+            <img src="images/pexels-kampus-production.jpg" alt="A white and gray RV with chairs laid beside it">
+            <figcaption>RVs are state of the are mobile campers</figcaption>
+            <h3>RV Camping is the use of a van/bus like vehicle to travel the roads and set camps
+                in designated areas. They not only allow campers to visit far off places but campers can
+                also visit more places. Most modern RVs are state of the art and afford
+                campers many luxuries that include a bathroom, kitchen, full bed and more. You
+                can go anywhere your wheels can take you!
+            </h3>
         </section>
 
         <h2>How to do it?<BUTTON ONCLICK="ShowAndHide('how')">Click me</BUTTON></h2>
@@ -151,6 +243,7 @@
             // how.style.display = 'none'
             // why.style.display = 'none'
             x.style.display = 'block';
+
         } else {
             x.style.display = 'none';
         }

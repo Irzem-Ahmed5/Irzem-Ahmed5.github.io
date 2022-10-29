@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>My Hobby: Camping</title>
+    <style>
+        html {
+            text-align: center;
+            background-image: linear-gradient(rgb(59, 17, 5), rgb(59, 20, 4), rgb(44, 23, 9));
+            font-family: Arial, Helvetica, sans-serif;
+            color: ghostwhite;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+
+            border: 1px solid greenyellow;
+            padding: auto;
+            color: green;
+        }
+
+        h2 {
+            color: rgb(138, 94, 37);
+        }
+
+        section {
+            width: auto;
+            padding: auto;
+            display: none;
+        }
+
+        a,
+        a:visited,
+        a:hover {
+            color: goldenrod;
+            text-decoration: none;
+        }
+
+        #brand-link {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+
+        <h1>Camping: an escape in nature</h1>
+
+
+        <h2>Home<BUTTON ONCLICK="ShowAndHide('home')">Click me</BUTTON></h2>
+        <section id="home">
+            <h3>Add slideshow</h3>
+            <img src="/itis3135/hobby/images/pexels-juliano-ferreira.jpg" alt="campers looking at the sunrise">
+
+            <h3>Welcome to a website all about camping, a way
+                to escape the urban stress and reconnect with nature!
+            </h3>
+        </section>
+
+        <h2>About Camping<BUTTON ONCLICK="ShowAndHide('about-camping')">Click me</BUTTON></h2>
+        <section id="about-camping">
+            <h1>Camping: an escape in nature</h1>
+
+            <h3><img src="images/My project.jpg" alt="Yellow Tent Under Starry Night">
+                <figcaption>Camping in a tent is quite common</figcaption>
+            </h3>
+            <h3>Camping is an outdoor recreational activity of spending a certain amount of time
+                (often a few days) living in a camp, tent or a camper.
+            </h3>
+            <h3>
+                <ul>
+                    <li>Most campers will camp out in tents, these are contraptions made from different
+                        materials, such as fiberglass and parachute fabric, to create temporary shelter
+                    </li>
+                    <li>Campers may also choose lodges or cabins, which are
+                        sturdier shelters with more amneties than simple tents
+                    </li>
+                    <li>Travelling campers may choose to travel with their shelter!
+                        These are in the form of RVs(recreational vehicles) that offer
+                        portable shelter and convenience that a camper operates as a
+                        vehicle
+                    </li>
+                </ul>
+            </h3>
+        </section>
+
+        <h2>When to go<BUTTON ONCLICK="ShowAndHide('when')">Click me</BUTTON></h2>
+        <section id="when">
+            <h3>Winter Camping</h3>
+            <h3>Spring, Summer and Fall Camping</h3>
+            <h3>Pictures</h3>
+        </section>
+
+        <h2>Where to go<BUTTON ONCLICK="ShowAndHide('where')">Click me</BUTTON></h2>
+        <section id="where">
+            <h3>Local parks and link to find em</h3>
+            <h3>Dispersed Camping</h3>
+            <h3>RV Camping</h3>
+        </section>
+
+        <h2>How to do it?<BUTTON ONCLICK="ShowAndHide('how')">Click me</BUTTON></h2>
+        <section id="how">
+            <h3>Tent and supplies</h3>
+            <h3>Rent a cabin with friends</h3>
+            <h3>Invest in an RV</h3>
+        </section>
+
+        <h2>Why you should camp<BUTTON ONCLICK="ShowAndHide('why')">Click me</BUTTON></h2>
+        <section id="why">
+            <h3>Reconnect with nature</h3>
+            <h3>Explore your own capabilities</h3>
+            <h3>Get to spend time with your loved ones</h3>
+        </section>
+
+    </main>
+    <footer>
+        <a id="brand-link" href="/itis3135/mightyalbatrossempire.com/brand.html">Mighty Albatross Empire&copy;</a>
+        <br>
+        <a href="https://validator.w3.org/check?uri=referer"><img src="images/button-valid-html5.gif" width="88"
+                height="31" alt="Link to HTML validator" />
+        </a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="images/button-valid-css.gif" width="88"
+                height="31" alt="Link to CSS validator" /></a>
+    </footer>
+</body>
+<script>
+    window.addEventListener('load', (event) => {
+        home.style.display = 'none'
+        about.style.display = 'none'
+        when.style.display = 'none'
+        where.style.display = 'none'
+        how.style.display = 'none'
+        why.style.display = 'none'
+    });
+    function ShowAndHide(sectionName) {
+        var x = document.getElementById(sectionName);
+        var home = document.getElementById('home')
+        var about = document.getElementById('about-camping')
+        var when = document.getElementById('when-to-go')
+        var where = document.getElementById('where')
+        var how = document.getElementById('how')
+        var why = document.getElementById('why')
+
+        if (x.style.display == 'none') {
+            // home.style.display = 'none'
+            // when.style.display = 'none'
+            // where.style.display = 'none'
+            // how.style.display = 'none'
+            // why.style.display = 'none'
+            x.style.display = 'block';
+        } else {
+            x.style.display = 'none';
+        }
+    }
+</script>
+
+
+</html>

@@ -55,6 +55,11 @@ keys.addEventListener('click', e => {
 
             display.textContent = calculate(firstValue, operator, secondValue)
         }
+        if (action === 'clear') {
+            display.textContent = 0
+            key.textContent = 'AC'
+            calculator.dataset.previousKeyType = 'clear'
+        }
 
 
         // Remove .is-depressed class from all keys

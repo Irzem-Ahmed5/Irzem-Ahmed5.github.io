@@ -14,10 +14,13 @@
             background-color: rgb(9, 51, 8);
             font-family: 'Sora', sans-serif;
             color: ghostwhite;
+            width: auto;
 
         }
 
-        body {}
+        body {
+            width: auto;
+        }
 
         h1 {
             font-family: 'Merriweather', serif;
@@ -34,10 +37,21 @@
             display: inline-table;
         }
 
+        h3 {
+            width: auto;
+            padding: auto;
+            margin: auto;
+        }
+
+        li {
+            text-align: justify;
+        }
+
         section {
             width: auto;
             margin: auto;
             padding: auto;
+            padding-bottom: 20px;
             display: none;
             background-image: linear-gradient(rgb(59, 17, 5), rgb(59, 20, 4), rgb(44, 23, 9));
         }
@@ -109,6 +123,7 @@
             <h3>Welcome to a website all about camping, a way
                 to escape the urban stress and reconnect with nature!
             </h3>
+            <hr>
             <h3>Want to keep up with the latest camping news?</h3>
             <label for="email">Enter Your Email To Join Our Newsletter:
                 <input id="email" name="email" type="email" required></label>
@@ -119,27 +134,27 @@
 
         <section id="about" class="page">
 
-            <h3><img src="images/My project.jpg" alt="Yellow Tent Under Starry Night">
-                <figcaption>Camping in a tent is quite common</figcaption>
-            </h3>
+            <img src="images/My project.jpg" alt="Yellow Tent Under Starry Night">
+            <figcaption>Camping in a tent is quite common</figcaption>
+
             <h3>Camping is an outdoor recreational activity of spending a certain amount of time
                 (often a few days) living in a camp, tent or a camper.
             </h3>
-            <h3>
-                <ul>
-                    <li>Most campers will camp out in tents, these are contraptions made from different
-                        materials, such as fiberglass and parachute fabric, to create temporary shelter
-                    </li>
-                    <li>Campers may also choose lodges or cabins, which are
-                        sturdier shelters with more amneties than simple tents
-                    </li>
-                    <li>Travelling campers may choose to travel with their shelter!
-                        These are in the form of RVs(recreational vehicles) that offer
-                        portable shelter and convenience that a camper operates as a
-                        vehicle
-                    </li>
-                </ul>
-            </h3>
+
+            <ul>
+                <li>Most campers will camp out in tents, these are contraptions made from different
+                    materials, such as fiberglass and parachute fabric, to create temporary shelter
+                </li>
+                <li>Campers may also choose lodges or cabins, which are
+                    sturdier shelters with more amneties than simple tents
+                </li>
+                <li>Travelling campers may choose to travel with their shelter!
+                    These are in the form of RVs(recreational vehicles) that offer
+                    portable shelter and convenience that a camper operates as a
+                    vehicle
+                </li>
+            </ul>
+
         </section>
 
 

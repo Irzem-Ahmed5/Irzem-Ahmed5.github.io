@@ -4,31 +4,40 @@
 <head>
     <meta charset="utf-8">
     <title>My Hobby: Camping</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
     <style>
         html {
             text-align: center;
-            background-image: linear-gradient(rgb(59, 17, 5), rgb(59, 20, 4), rgb(44, 23, 9));
+            background-color: rgb(9, 51, 8);
             font-family: Arial, Helvetica, sans-serif;
             color: ghostwhite;
 
         }
 
+        body {}
+
         h1 {
             font-family: Georgia, 'Times New Roman', Times, serif;
 
             border: 1px solid greenyellow;
+            margin: auto;
             padding: auto;
-            color: green;
+            color: rgb(102, 160, 47);
+            width: 50%;
         }
 
         h2 {
             color: rgb(138, 94, 37);
+            display: inline-table;
         }
 
         section {
             width: auto;
+            margin: auto;
             padding: auto;
             display: none;
+            background-image: linear-gradient(rgb(59, 17, 5), rgb(59, 20, 4), rgb(44, 23, 9));
         }
 
         a,
@@ -50,6 +59,21 @@
             border: 2px solid ghostwhite;
             border-collapse: collapse;
         }
+
+        .button {
+            font: bold 11px Arial;
+            text-decoration: none;
+            background-color: #0a4707;
+            padding: 2px 20px 2px 6px;
+            border-top: 1px solid #CCCCCC;
+            border-right: 1px solid #333333;
+            border-bottom: 1px solid #333333;
+            border-left: 1px solid #CCCCCC;
+        }
+
+        .button:hover {
+            background-color: #07310579;
+        }
     </style>
 </head>
 
@@ -57,11 +81,17 @@
     <header></header>
     <main>
 
-        <h1>Camping: an escape in nature</h1>
+        <h1>&#x1F332;Camping: an escape into nature&#x1F332;</h1>
 
 
-        <h2>Home<BUTTON ONCLICK="ShowAndHide('home')">Click me</BUTTON></h2>
-        <section id="home">
+        <h2><a id="home-button" href="#" role="button" class="button">Home</a></h2>
+        <h2><a id="about-button" href="#" role="button" class="button">About Camping</a></h2>
+        <h2><a id="when-button" href="#" role="button" class="button">When to go</a></h2>
+        <h2><a id="where-button" href="#" role="button" class="button">Where to go</a></h2>
+        <h2><a id="how-button" href="#" role="button" class="button">How to do it?</a></h2>
+        <h2><a id="why-button" href="#" role="button" class="button">Why you should camp</a></h2>
+
+        <section id="home" class="page">
             <h3>Add slideshow</h3>
             <img src="images/pexels-juliano-ferreira.jpg" alt="campers looking at the sunrise">
             <figcaption>Camping can take you beautiful places</figcaption>
@@ -70,9 +100,8 @@
             </h3>
         </section>
 
-        <h2>About Camping<BUTTON ONCLICK="ShowAndHide('about-camping')">Click me</BUTTON></h2>
-        <section id="about-camping">
-            <h1>Camping: an escape in nature</h1>
+
+        <section id="about" class="page">
 
             <h3><img src="images/My project.jpg" alt="Yellow Tent Under Starry Night">
                 <figcaption>Camping in a tent is quite common</figcaption>
@@ -97,8 +126,8 @@
             </h3>
         </section>
 
-        <h2>When to go<BUTTON ONCLICK="ShowAndHide('when')">Click me</BUTTON></h2>
-        <section id="when">
+
+        <section id="when" class="page">
             <img src="images/pexels-imad-clicks.jpg" alt="Man in tent in the snow">
             <figcaption>A man camping out in the snow</figcaption>
             <h3>Winter Camping is one of the most favourite camping experiences for campers.
@@ -167,8 +196,8 @@
             </h3>
         </section>
 
-        <h2>Where to go<BUTTON ONCLICK="ShowAndHide('where')">Click me</BUTTON></h2>
-        <section id="where">
+
+        <section id="where" class="page">
             <img src="images/my-tent-set-up-1.jpg" alt="2 man tent set up">
             <figcaption>Drive-in campsites are very beginner friendly</figcaption>
             <h3>Local national and state parks in the USA are wonderful places to camp.
@@ -193,15 +222,15 @@
             </h3>
         </section>
 
-        <h2>How to do it?<BUTTON ONCLICK="ShowAndHide('how')">Click me</BUTTON></h2>
-        <section id="how">
+
+        <section id="how" class="page">
             <h3>Tent and supplies</h3>
             <h3>Rent a cabin with friends</h3>
             <h3>Invest in an RV</h3>
         </section>
 
-        <h2>Why you should camp<BUTTON ONCLICK="ShowAndHide('why')">Click me</BUTTON></h2>
-        <section id="why">
+
+        <section id="why" class="page">
             <h3>Reconnect with nature</h3>
             <h3>Explore your own capabilities</h3>
             <h3>Get to spend time with your loved ones</h3>
@@ -219,35 +248,64 @@
     </footer>
 </body>
 <script>
-    window.addEventListener('load', (event) => {
-        home.style.display = 'none'
-        about.style.display = 'none'
-        when.style.display = 'none'
-        where.style.display = 'none'
-        how.style.display = 'none'
-        why.style.display = 'none'
+    // window.addEventListener('load', (event) => {
+    //     home.style.display = 'none'
+    //     about.style.display = 'none'
+    //     when.style.display = 'none'
+    //     where.style.display = 'none'
+    //     how.style.display = 'none'
+    //     why.style.display = 'none'
+    // });
+    // function ShowAndHide(sectionName) {
+    //     var x = document.getElementById(sectionName);
+    //     var home = document.getElementById('home')
+    //     var about = document.getElementById('about-camping')
+    //     var when = document.getElementById('when-to-go')
+    //     var where = document.getElementById('where')
+    //     var how = document.getElementById('how')
+    //     var why = document.getElementById('why')
+
+    //     if (x.style.display == 'none') {
+    //         // home.style.display = 'none'
+    //         // when.style.display = 'none'
+    //         // where.style.display = 'none'
+    //         // how.style.display = 'none'
+    //         // why.style.display = 'none'
+    //         x.style.display = 'block';
+
+    //     } else {
+    //         x.style.display = 'none';
+    //     }
+    // }
+    $(document).ready(function () {
+
+        $('#home-button').on('click', function () {
+            $('.page').hide();
+            $('#home').toggle(500);
+        });
+        $('#about-button').on('click', function () {
+            $('.page').hide();
+            $('#about').toggle(500);
+        });
+        $('#when-button').on('click', function () {
+            $('.page').hide();
+            $('#when').toggle(500);
+        });
+        $('#where-button').on('click', function () {
+            $('.page').hide();
+            $('#where').toggle(500);
+        });
+        $('#how-button').on('click', function () {
+            $('.page').hide();
+            $('#how').toggle(500);
+        });
+        $('#why-button').on('click', function () {
+            $('.page').hide();
+            $('#why').toggle(500);
+        });
+
     });
-    function ShowAndHide(sectionName) {
-        var x = document.getElementById(sectionName);
-        var home = document.getElementById('home')
-        var about = document.getElementById('about-camping')
-        var when = document.getElementById('when-to-go')
-        var where = document.getElementById('where')
-        var how = document.getElementById('how')
-        var why = document.getElementById('why')
 
-        if (x.style.display == 'none') {
-            // home.style.display = 'none'
-            // when.style.display = 'none'
-            // where.style.display = 'none'
-            // how.style.display = 'none'
-            // why.style.display = 'none'
-            x.style.display = 'block';
-
-        } else {
-            x.style.display = 'none';
-        }
-    }
 </script>
 
 

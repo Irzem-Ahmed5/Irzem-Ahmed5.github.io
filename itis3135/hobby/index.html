@@ -5,6 +5,40 @@
     <meta charset="utf-8">
     <title>My Hobby: Camping</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('#home').show(500);
+
+            $('#home-button').on('click', function () {
+                $('.page').hide();
+                $('#home').toggle(500);
+            });
+            $('#about-button').on('click', function () {
+                $('.page').hide();
+                $('#about').toggle(500);
+            });
+            $('#when-button').on('click', function () {
+                $('.page').hide();
+                $('#when').toggle(500);
+            });
+            $('#where-button').on('click', function () {
+                $('.page').hide();
+                $('#where').toggle(500);
+            });
+            $('#how-button').on('click', function () {
+                $('.page').hide();
+                $('#how').toggle(500);
+            });
+            $('#why-button').on('click', function () {
+                $('.page').hide();
+                $('#why').toggle(500);
+            });
+
+        });
+
+    </script>
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Sora&display=swap');
@@ -48,7 +82,6 @@
         section {
             width: auto;
             margin: auto;
-            padding: auto;
             padding-bottom: 20px;
             display: none;
             background-image: linear-gradient(rgb(59, 17, 5), rgb(59, 20, 4), rgb(44, 23, 9));
@@ -126,7 +159,7 @@
             <h3>Want to keep up with the latest camping news?</h3>
             <label for="email">Enter Your Email To Join Our Newsletter:
                 <input id="email" name="email" type="email" required></label>
-            <input value="Send" action="#"></input>
+            <button value="Send" action="#">
 
         </section>
 
@@ -177,59 +210,59 @@
                 with nets would be quite preferable. This keeps you off the ground and away from
                 potential night visitors and also from being swarmed by flying insects.
             </h3>
-            <h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Weather</th>
-                            <th>Months</th>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td rowspan="3">Spring</td>
-                            <td>March</td>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Weather</th>
+                        <th>Months</th>
 
-                        </tr>
-                        <tr>
-                            <td>April</td>
-                        </tr>
-                        <tr>
-                            <td>May</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3">Summer</td>
-                            <td>June</td>
-                        </tr>
-                        <tr>
-                            <td>July</td>
-                        </tr>
-                        <tr>
-                            <td>August</td>
-                        </tr>
-                        <tr>
-                            <td rowspan="3">Fall</td>
-                            <td>September</td>
-                        </tr>
-                        <tr>
-                            <td>October</td>
-                        </tr>
-                        <tr>
-                            <td>November</td>
-                        </tr>
-                        <td rowspan="3">Winter</td>
-                        <td>December</td>
-                        </tr>
-                        <tr>
-                            <td>January</td>
-                        </tr>
-                        <tr>
-                            <td>February</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </h3>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="3">Spring</td>
+                        <td>March</td>
+
+                    </tr>
+                    <tr>
+                        <td>April</td>
+                    </tr>
+                    <tr>
+                        <td>May</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Summer</td>
+                        <td>June</td>
+                    </tr>
+                    <tr>
+                        <td>July</td>
+                    </tr>
+                    <tr>
+                        <td>August</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Fall</td>
+                        <td>September</td>
+                    </tr>
+                    <tr>
+                        <td>October</td>
+                    </tr>
+                    <tr>
+                        <td>November</td>
+                    </tr>
+                    <td rowspan="3">Winter</td>
+                    <td>December</td>
+                    </tr>
+                    <tr>
+                        <td>January</td>
+                    </tr>
+                    <tr>
+                        <td>February</td>
+                    </tr>
+                </tbody>
+            </table>
+
         </section>
 
 
@@ -354,74 +387,11 @@
         <a id="brand-link" href="/itis3135/mightyalbatrossempire.com/brand.html">Mighty Albatross Empire&copy;</a>
         <br>
         <a href="https://validator.w3.org/check?uri=referer"><img src="images/button-valid-html5.gif" width="88"
-                height="31" alt="Link to HTML validator" />
+                height="31" alt="Link to HTML validator">
         </a>
         <a href="https://jigsaw.w3.org/css-validator/check/referer"><img src="images/button-valid-css.gif" width="88"
-                height="31" alt="Link to CSS validator" /></a>
+                height="31" alt="Link to CSS validator"></a>
     </footer>
 </body>
-<script>
-    // window.addEventListener('load', (event) => {
-    //     home.style.display = 'none'
-    //     about.style.display = 'none'
-    //     when.style.display = 'none'
-    //     where.style.display = 'none'
-    //     how.style.display = 'none'
-    //     why.style.display = 'none'
-    // });
-    // function ShowAndHide(sectionName) {
-    //     var x = document.getElementById(sectionName);
-    //     var home = document.getElementById('home')
-    //     var about = document.getElementById('about-camping')
-    //     var when = document.getElementById('when-to-go')
-    //     var where = document.getElementById('where')
-    //     var how = document.getElementById('how')
-    //     var why = document.getElementById('why')
-
-    //     if (x.style.display == 'none') {
-    //         // home.style.display = 'none'
-    //         // when.style.display = 'none'
-    //         // where.style.display = 'none'
-    //         // how.style.display = 'none'
-    //         // why.style.display = 'none'
-    //         x.style.display = 'block';
-
-    //     } else {
-    //         x.style.display = 'none';
-    //     }
-    // }
-    $(document).ready(function () {
-
-        $('#home').show(500);
-
-        $('#home-button').on('click', function () {
-            $('.page').hide();
-            $('#home').toggle(500);
-        });
-        $('#about-button').on('click', function () {
-            $('.page').hide();
-            $('#about').toggle(500);
-        });
-        $('#when-button').on('click', function () {
-            $('.page').hide();
-            $('#when').toggle(500);
-        });
-        $('#where-button').on('click', function () {
-            $('.page').hide();
-            $('#where').toggle(500);
-        });
-        $('#how-button').on('click', function () {
-            $('.page').hide();
-            $('#how').toggle(500);
-        });
-        $('#why-button').on('click', function () {
-            $('.page').hide();
-            $('#why').toggle(500);
-        });
-
-    });
-
-</script>
-
 
 </html>

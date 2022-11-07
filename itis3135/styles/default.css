@@ -70,11 +70,13 @@ a,
 a:visited {
   text-decoration: underline;
   color: #78E0FC;
+  font-family: 'Sora', sans-serif;
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: underline;
   color: ghostwhite;
+  font-family: 'Sora', sans-serif;
 }
 
 

@@ -20,10 +20,10 @@
         <h3>Today: <span id="date"></span></h3>
 
         <form>
-            <label for name="name">Please enter your
+            <label for="name">Please enter your
                 name: <input id="name" type="text" required placeholder="Jane Doe">
             </label>
-            <label for name="feeling">
+            <label for="feeling">
                 How are you feeling?
                 <input id="feeling" type="text" required placeholder="I'm feeling...">
             </label>
@@ -33,19 +33,19 @@
         </form>
 
         <form>
-            <label for name="age">
+            <label for="age">
                 Want to see how old you are in day? Enter your age:
                 <input id="age" name="age" placeholder="25">
             </label>
             <button type="button" onclick="ageInDays()">Check</button>
-            <h3 id="displayAgeInDays"></h3>
+            <h3 id="displayAgeInDays">Age in days:</h3>
 
             <br>
 
 
-            <label>Winter break is December 16 2022:
-                <h3 id="time-till-winter-break"></h3>
-            </label>
+            <label>Winter break is December 16 2022:</label>
+            <h3 id="time-till-winter-break">#days</h3>
+
 
             <button type="button" onclick="timeToWinter()">How much longer till
                 winter break?</button>

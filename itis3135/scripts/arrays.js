@@ -9,7 +9,9 @@ var salaries = [65, 100, 100];
 //     document.getElementById("persons").focus();
 // };
 
-
+function doSomething() {
+    prompt("Hello?");
+}
 
 
 

@@ -2,7 +2,7 @@
 
 html {
   margin: auto;
-  padding: auto;
+
   background-color: #181A1B;
 }
 
@@ -41,7 +41,7 @@ footer {
 
 #introbullets {
   margin: auto;
-  padding: auto;
+
   text-align: justify;
 }
 

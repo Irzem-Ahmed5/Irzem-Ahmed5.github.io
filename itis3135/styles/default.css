@@ -30,7 +30,7 @@ footer {
   font-size: small;
   color: ghostwhite;
   background-color: rgb(76, 87, 99);
-
+  text-decoration: none;
   padding-top: 5px;
 
 }
@@ -68,13 +68,13 @@ td {
 
 a,
 a:visited {
-  text-decoration: underline;
+  text-decoration: none;
   color: #78E0FC;
   font-family: 'Sora', sans-serif;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: ghostwhite;
   font-family: 'Sora', sans-serif;
 }
@@ -99,6 +99,12 @@ tbody tr:nth-child(even) {
 
 ul {
   text-align: justify;
+  list-style-type: square;
+
+}
+
+li {
+  list-style-type: square;
 }
 
 h3 {

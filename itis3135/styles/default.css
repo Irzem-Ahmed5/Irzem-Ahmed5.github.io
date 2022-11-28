@@ -135,7 +135,7 @@ label {
   margin: 0.5rem 0;
 }
 
-input,
+.form,
 textarea,
 select {
   margin: 10px 0 0 0;
@@ -237,4 +237,24 @@ input[type="file"] {
   background-image: linear-gradient(to bottom, #fe886a, #ff7033);
   grid-column: -2;
   grid-row: 2 / span 4;
+}
+
+/* slideshow css*/
+
+#slideshow-container {
+  margin: auto;
+}
+
+#slideshow-container img.slides {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* display: none; */
+
+}
+
+.slideshow-nav-buttons {
+  width: 10%;
+
+  position: absolute;
 }

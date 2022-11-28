@@ -6,6 +6,9 @@
 
     <link rel="stylesheet" href="styles/default.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <title>
         Mighty Albatross &mdash; Irzem Ahmed &mdash; ITIS3135 &mdash; Slideshow
     </title>
@@ -16,11 +19,26 @@
     <main>
         <h2>Slideshow</h2>
 
+        <input class="slideshow-nav-buttons" type="button" value="Previous" onclick="nextButton()">
+        <input class="slideshow-nav-buttons" type="button" value="Next" onclick="previousButton()">
+
+        <!-- <div id="slideshow-container"> -->
+
+        <img id="slide-pic-1" src="images/ziarat-mountains.jpg" alt="A view of the Ziarat mountains" class="slides">
+        <img id="slide-pic-2" src="images/greenland-glaciers.jpg" alt="white glaciers and mountains" class="slides">
+        <img id="slide-pic-3" src="images/wrightsville-beach.jpg" alt="sunrising behind the waves in wrightsville"
+            class="slides">
+        <img id="slide-pic-4" src="images/niagara-falls.jpg" alt="Niagara falls with a rainbow" class="slides">
+        <img id="slide-pic-5" src="images/roanoke-view.jpg" alt="Outlook from Roanoke high point" class="slides">
+
+
+
 
 
     </main>
     <div data-include="components/footer.html"></div>
-    <script src="./scripts/HTMLInclude.js"></script>
+    <script src="scripts/HTMLInclude.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 
 </html>

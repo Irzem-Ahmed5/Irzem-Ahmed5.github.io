@@ -256,5 +256,5 @@ input[type="file"] {
 .slideshow-nav-buttons {
   width: 10%;
 
-  position: absolute;
+  position: sticky;
 }

@@ -15,17 +15,20 @@ function nextButton() {
     currentPictureIndex++;
 
     if (currentPictureIndex == 6) {
-        $('#slide-pic-6').hide(pictures[5])
-        currentPictureIndex = -1
+        $(pictures[5]).hide();
+        $(pictures[0]).show();
+        currentPictureIndex = 0
     }
 
     if (currentPictureIndex == 5) {
-        $('#slide-pic-6').show(pictures[5])
+        $('#slide-pic-6').show();
+    } else {
+        $('#slide-pic-6').hide();
     }
 
     $(pictures[currentPictureIndex]).show(500);
     $(pictures[currentPictureIndex - 1]).hide();
-    console.log("curr pic ind" + currentPictureIndex)
+    console.log("curr pic ind" + currentPictureIndex);
 }
 
 function previousButton() {

@@ -21,7 +21,7 @@ function nextButton() {
     }
 
     if (currentPictureIndex == 5) {
-        $('#slide-pic-6').show();
+        $('#slide-pic-6').show(500);
     } else {
         $('#slide-pic-6').hide();
     }

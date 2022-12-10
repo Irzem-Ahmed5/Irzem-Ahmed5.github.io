@@ -1,0 +1,48 @@
+html {
+    background-image: url("../images/milkyway-background-pexels-philippe-donn-1169754.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgb(21, 21, 39);
+    color: ghostwhite;
+}
+
+body {}
+
+h1 {
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(48, 42, 42, 0.523);
+    color: white;
+    text-align: center;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: ghostwhite;
+
+}
+
+a:hover {
+    color: gray;
+}
+
+.nav-buttons {
+    border: 1px solid ghostwhite;
+    text-align: center;
+    padding: 10px 16px;
+}
+
+#home-button {
+    vertical-align: middle;
+}
+
+#brand-link {
+    text-decoration: underline;
+}

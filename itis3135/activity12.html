@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>bxSlider Plugin</title>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <title>
+        Mighty Albatross &mdash; Irzem Ahmed &mdash; ITIS3135 &mdash; Home Page
+    </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lora&family=Sora:wght@300&display=swap');
+
+        html {
+            background-color: #042536;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 540px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 3px solid green;
+            font-family: 'Sora', sans-serif;
+            color: green;
+        }
+
+        h1 {
+            background: #dfe3e6 url('images/act12/bullet.gif') no-repeat 7px center;
+            margin: 0;
+            padding: 3px 0 3px 25px;
+            border: solid green 1px;
+            color: green;
+            font-family: 'Lora', serif;
+        }
+
+        a,
+        a:visited {
+            color: green;
+        }
+
+        .bx-wrapper {
+            margin-bottom: 20px;
+        }
+
+        #id_pager {
+            text-align: center;
+            font-size: 90%;
+            color: green;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div data-include="components/header.html"></div>
+    <main>
+        <h1>UNC Charlotte</h1>
+        <p>Let's explore our campus!</p>
+        <ul id="slider">
+            <li><img src="images/act12/building_01.jpg" alt="UNCC entrance" title="Entrance"></li>
+            <li><img src="images/act12/building_02.jpg" alt="UNCC building" title="Office"></li>
+            <li><img src="images/act12/building_03.jpg" alt="UNCC dorms" title="Housing"></li>
+            <li><img src="images/act12/building_04.jpg" alt="UNCC stadium" title="Stadium"></li>
+            <li><img src="images/act12/building_05.jpg" alt="UNCC Student Union" title="Student Union"></li>
+        </ul>
+        <p id="id_pager"></p>
+    </main>
+    <footer>
+        <div data-include="components/footer.html"></div>
+        <script src="./scripts/HTMLInclude.js"></script>
+        <script src="./scripts/activity12.js"></script>
+    </footer>
+</body>
+
+</html>

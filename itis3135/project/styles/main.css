@@ -2,10 +2,10 @@
 
 
 html {
-    background-image: url("../images/milkyway-background-pexels-philippe-donn-1169754.jpg");
+    /* background-image: url("../images/milkyway-background-pexels-philippe-donn-1169754.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
-    background-color: rgb(21, 21, 39);
+    background-size: cover; */
+    background-color: rgb(8, 8, 34);
     color: rgb(197, 196, 247);
 }
 

@@ -35,6 +35,11 @@ footer {
 
 }
 
+figcaption {
+  font-size: small;
+  color: rgb(194, 192, 192);
+}
+
 .contractparagraph {
   text-align: justify;
 }

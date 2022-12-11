@@ -13,5 +13,5 @@ function showPic(id) {
 }
 
 function hideAll() {
-    $('.bunny-pic').hide();
+    $('.bunny-pic').fadeOut();
 }

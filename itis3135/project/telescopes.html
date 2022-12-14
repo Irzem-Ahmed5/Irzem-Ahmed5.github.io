@@ -10,6 +10,8 @@
     <title>
         Mighty Albatross &mdash; Irzem Ahmed &mdash; ITIS3135 &mdash; Client Project Homepage
     </title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 
 <body>
@@ -26,52 +28,73 @@
         </nav>
 
         <h2>Types of telescopes</h2>
-        <section>
-            <figure>
-                <img src="images/refracting_telescope_wavy.en.jpg" alt="diagram of refractor telescope">
-                <figcaption>A diagram of a reflector telescope from nasa <a
-                        href="https://spaceplace.nasa.gov/telescopes/en/">(source)</a></figcaption>
-            </figure>
-            <h2>Refractor Telescopes</h2>
-            <ul>
-                <li>Fairly portable telescope form</li>
-                <li>Sturdy build</li>
-                <li>Low maintenance</li>
-                <li>Color fringing may occur</li>
-                <li>Relatively expensive</li>
 
-            </ul>
-        </section>
+        <div id="accordion">
+            <h3>+ Refractor Telescopes</h3>
+            <div class="accordion-item">
+                <section>
+                    <figure>
+                        <img src="images/refracting_telescope_wavy.en.jpg" alt="diagram of refractor telescope">
+                        <figcaption>A diagram of a reflector telescope from nasa <a
+                                href="https://spaceplace.nasa.gov/telescopes/en/">(source)</a></figcaption>
+                    </figure>
+                    <h2>Refractor Telescopes</h2>
+                    <ul>
+                        <li>Fairly portable telescope form</li>
+                        <li>Sturdy build</li>
+                        <li>Low maintenance</li>
+                        <li>Color fringing may occur</li>
+                        <li>Relatively expensive</li>
 
-        <section>
-            <figure>
-                <img src="images/reflecting_telescope_wavy.en.jpg" alt="diagram of reflector telescope">
-                <figcaption>A diagram of a reflector telescope from nasa <a
-                        href="https://spaceplace.nasa.gov/telescopes/en/">(source)</a></figcaption>
-            </figure>
-            <h2>Relfector Telescopes</h2>
-            <ul>
-                <li>Beginner-friendly</li>
-                <li>Cost the least</li>
-                <li>Able to view smaller objects</li>
-                <li>Can get very large</li>
-                <li>Need to use a separate red dot finder</li>
+                    </ul>
+                </section>
+            </div>
+            <h3>+ Relfector Telescopes</h3>
+            <div class="accordion-item">
+                <section>
+                    <figure>
+                        <img src="images/reflecting_telescope_wavy.en.jpg" alt="diagram of reflector telescope">
+                        <figcaption>A diagram of a reflector telescope from nasa <a
+                                href="https://spaceplace.nasa.gov/telescopes/en/">(source)</a></figcaption>
+                    </figure>
+                    <h2>Relfector Telescopes</h2>
+                    <ul>
+                        <li>Beginner-friendly</li>
+                        <li>Cost the least</li>
+                        <li>Able to view smaller objects</li>
+                        <li>Can get very large</li>
+                        <li>Need to use a separate red dot finder</li>
 
-            </ul>
-        </section>
+                    </ul>
+                </section>
+            </div>
+            <h3>+ Catadioptric/Compound Telescopes</h3>
+            <div class="accordion-item">
+                <section>
+                    <figure>
+                        <img src="../project/images/compound-telescope.jpg" alt="Diagram of a compound telescope">
+                        <figcaption>Diagram of a compound telescope</figcaption>
+
+                    </figure>
+                    <h2>Catadioptric Telescopes</h2>
+                    <ul>
+                        <li>Most portable type of telescope</li>
+                        <li>May require collimation</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
 
 
-        <section>
-            <h2>Catadioptric Telescopes</h2>
-            <ul>
-                <li>Most portable type of telescope</li>
-                <li>May require collimation</li>
-            </ul>
-        </section>
+        <a href="https://optcorp.com/blogs/telescopes-101/the-basic-telescope-types">Info Source</a>
 
-        <a href="https://optcorp.com/blogs/telescopes-101/the-basic-telescope-types">Source</a>
+
+
+
+
 
     </main>
+    <script src="../project/scripts/accordion.js"></script>
     <footer>
         <a id="brand-link" href="../mightyalbatrossempire.com/brand.html">Designed by Mighty Albatross Empire&copy;</a>
         <br>

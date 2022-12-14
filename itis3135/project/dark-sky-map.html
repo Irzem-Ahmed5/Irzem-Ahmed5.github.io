@@ -10,6 +10,10 @@
     <title>
         Mighty Albatross &mdash; Irzem Ahmed &mdash; ITIS3135 &mdash; Client Project Homepage
     </title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
 </head>
 
 <body>
@@ -31,7 +35,56 @@
             <img src="images/milkyway-background-pexels-philippe-donn-1169754.jpg" alt="milkyway picture" width="1000"
                 height="1000">
         </section>
+
+        <div class="slideshow">
+
+            <div class="slides-box">
+
+                <!-- Slides -->
+                <div class="slide">
+                    <p class="title">Jupiter</p>
+                    <img src="images/dark-sky-map/jupiter.jpeg" alt="image" title="image">
+                </div>
+
+                <div class="slide">
+                    <p class="title">Saturn</p>
+                    <img src="images/dark-sky-map/saturn.png" alt="image" title="image">
+                </div>
+
+                <div class="slide">
+                    <p class="title">Mercury</p>
+                    <img src="images/dark-sky-map/mercury.png" alt="image" title="image">
+                </div>
+                <div class="slide">
+                    <p class="title">Venus</p>
+                    <img src="images/dark-sky-map/venus.jpg" alt="image" title="image">
+                </div>
+
+            </div>
+
+            <!-- Nav buttons -->
+            <div class="slideshow-buttons">
+
+                <div class="prev-btn">&larr;</div>
+                <div class="next-btn">&rarr;</div>
+
+            </div>
+
+
+
+
+
     </main>
+
+
+    <script src="scripts/slideshow.js"></script>
+    <script>
+        $('.slideshow').slideshowPlugin({
+            effect: 'sliding',
+            // more options here
+        });
+    </script>
+
     <footer>
         <a id="brand-link" href="../mightyalbatrossempire.com/brand.html">Designed by Mighty Albatross Empire&copy;</a>
         <br>

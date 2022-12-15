@@ -17,16 +17,7 @@
 <body>
 
     <main>
-        <h1>Quick Astronomy</h1>
-        <nav class="nav-buttons">
-            <a id="home-button" href="https://webpages.charlotte.edu/mahmed29/itis3135/project/index.html"><span
-                    class="material-symbols-outlined">home</span></a>|
-            <a href="https://webpages.charlotte.edu/mahmed29/itis3135/project/telescopes.html">Telescope types</a> |
-            <a href="https://webpages.charlotte.edu/mahmed29/itis3135/project/dark-sky-map.html">Dark Sky Map</a> |
-            <a href="https://webpages.charlotte.edu/mahmed29/itis3135/project/history-astronomy.html">History</a> |
-            <a href="https://webpages.charlotte.edu/mahmed29/itis3135/project/famous-telescopes.html">Famous
-                Telescopes</a>
-        </nav>
+        <div data-include="components/header.html"></div>
 
         <section>
             <h2>History of Astronomy</h2>
@@ -42,15 +33,8 @@
         </section>
     </main>
     <script src="scripts/default.js"></script>
-    <footer>
-        <a id="brand-link" href="../mightyalbatrossempire.com/brand.html">Designed by Mighty Albatross Empire&copy;</a>
-        <br>
-        <a class="validator-button" href="https://validator.w3.org/check?uri=referer"><img
-                src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
-        </a>
-        <a class="validator-button" href="https://jigsaw.w3.org/css-validator/check/referer"><img
-                src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator"></a>
-    </footer>
+    <div data-include="components/footer.html"></div>
+    <script src="./scripts/HTMLInclude.js"></script>
 
 </body>
 
